@@ -9,25 +9,6 @@
 
 ! ------ 𝗘𝘅𝗽𝗲𝗿𝗶𝗺𝗲𝗻𝘁𝗮𝗹 𝗙𝗶𝗹𝘁𝗲𝗿𝘀 𝗧𝗲𝘀𝘁 ------ !
 
-! YouTube Consent Experimental
-youtube.com##+js(set, ytInitialPlayerResponse.auxiliaryUi.messageRenderers.upsellDialogRenderer.isVisible, false)
-youtube.com##+js(set, ytInitialData.overlay.upsellDialogRenderer.isVisible, false)
-youtube.com##+js(json-prune, [].playerResponse.auxiliaryUi.messageRenderers.upsellDialogRenderer)
-youtube.com##+js(json-prune, auxiliaryUi.messageRenderers.upsellDialogRenderer)
-youtube.com##+js(json-prune, topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer)
-youtube.com##+js(set, ytInitialData.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer.forceConsent, false)
-youtube.com##+js(json-prune, [].response.topbar.desktopTopbarRenderer.interstitial.consentBumpRenderer)
-youtube.com##.opened
-youtube.com##ytd-popup-container
-youtube.com###consent-bump
-youtube.com###consent-bump > .ytd-consent-bump-lightbox.style-scope
-
-
-
-
-! ------ 𝗘𝘅𝗽𝗲𝗿𝗶𝗺𝗲𝗻𝘁𝗮𝗹 𝗙𝗶𝗹𝘁𝗲𝗿𝘀 𝗧𝗲𝘀𝘁 ------ !
-
-!【=】【=】【=】【=】【=】【=】【=】【=】【=】【=】【=】【=】【=】【=】【=】【=】【=】【=】!
 
 
 ! https://www.youtube.com
@@ -79,6 +60,14 @@ www.actvid.com##.text-center.server-notice
 www.actvid.com###block-rating > .clearfix
 www.actvid.com##.float-left.btn-sm.btn-light.btn
 www.actvid.com##.float-right.btn-sm.btn-light.btn
+www.actvid.com###gift-top
+rabbitstream.net##[src="https://i.imgur.com/UUijo0H.gif"]
+rabbitstream.net###overlay-center
+||i.imgur.com/UUijo0H.gif$image
+||rabbitstream.net/images/close.png$image
+||i.imgur.com/UUijo0H.gif$image
+||rabbitstream.net/images/close.png$image
+
 
 ! https://real-123movies.best
 ||real-123movies.best/dist/image/header/login.jpg$image
@@ -120,6 +109,8 @@ www.sxyprn.net##[href="/live"]
 www.sxyprn.net##.post_control > .transition.pes_wl
 www.sxyprn.net##.small_post_control.vid_playlist_blog.vid_playlist_post
 www.sxyprn.net##[href="http://pics.vc/popular"]
+www.sxyprn.net##.tbd
+www.sxyprn.net##.comments_div
 
 
 ! https://www.porntrex.com
@@ -334,6 +325,7 @@ www.pornwhite.com##.spot > [href="https://www.pornwhite.com/signup.php"]
 www.pornwhite.com##.long.video-options
 www.pornwhite.com##.container > .heading
 www.pornwhite.com##.bottom-banners
+www.pornwhite.com##.spot
 
 ! https://bestzzporno.com
 bestzzporno.com##.clearfix.footer
@@ -439,6 +431,8 @@ xporno.name##.spot
 xporno.name##.footer
 xporno.name##.bmaHxDX-bounce-down.sticker_container
 xporno.name##.empty-search__title
+xporno-link.translate.goog##.spot
+xporno-link.translate.goog###ec653e6b03
 
 ! https://odqw5a5fl56hafktc6zhwsaeeu--xporno-name.translate.goog
 odqw5a5fl56hafktc6zhwsaeeu--xporno-name.translate.goog##.block-size
@@ -606,6 +600,54 @@ mail.protonmail.com##.conversationPlaceholder
 
 ! https://thispersondoesnotexist.com
 thispersondoesnotexist.com###description
+
+! https://castbox.fm
+castbox.fm##.cookies-conf
+
+! https://superuser.com
+superuser.com##.js-consent-banner.r16.l16.b16.bar-lg.fc-white.bg-black-750.sm\:p16.p32.sm\:w-auto.ws4.z-nav-fixed.ps-fixed.ff-sans
+
+! https://www.ikea.com
+www.ikea.com##.vertical-align-content.ot-bottom-left.otFloatingRoundedCorner
+
+! airbnb
+www.airbnb.ca##._1dl71rl
+
+! www.eporner.com
+www.eporner.com###EPimLayerOuter
+www.eporner.com###admobilefoot
+www.eporner.com##.vjs-docker
+
+! 2021-08-10 https://webapps.stackexchange.com
+webapps.stackexchange.com##.js-consent-banner.r16.l16.b16.bar-lg.fc-white.bg-black-750.sm\:p16.p32.sm\:w-auto.ws4.z-nav-fixed.ps-fixed.ff-sans
+
+! 2021-09-06 https://stackoverflow.com
+stackoverflow.com##.js-consent-banner.r16.l16.b16.bar-lg.fc-white.bg-black-750.sm\:p16.p32.sm\:w-auto.ws4.z-nav-fixed.ps-fixed.ff-sans
+
+! 2021-10-19 https://www2.hm.com
+www2.hm.com##.ot-sdk-container
+
+! 2021-11-06 https://animixplay.to
+animixplay.to##.altsourcenotif > span
+||https://streamsb.net/upload-data/playerlogo_3201.jpg
+
+! 2021-11-15 https://animixplay.to
+animixplay.to###streambottomright
+
+! 2021-11-15 https://gogoanime.cm
+gogoanime.cm##.adsverting.anime_name
+
+! 2021-12-03 https://asdfzxc7777.site
+asdfzxc7777.site##.img-box
+
+! 2021-12-31 https://en.wikipedia.org
+en.wikipedia.org###siteNotice
+
+! 2022-01-17 https://www.usa.lighting.philips.com
+||consent-pref.trustarc.com/$subdocument
+||consent-pref.trustarc.com/?type=philips_lighting_new&site=philips-lighting.com&action=notice&country=us&locale=en_US&behavior=expressed&gtm=1&layout=default_eu&privacypolicylink=%2F%2Fwww.usa.lighting.philips.com%2Fcookie-notice&cookieLink=%2F%2Fwww.usa.lighting.philips.com%2Fcookie-notice&irm=undefined&from=https://consent.trustarc.com/$subdocument
+www.usa.lighting.philips.com##.truste_overlay
+
 
 
 
